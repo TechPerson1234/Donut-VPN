@@ -462,7 +462,7 @@
         <details class="acc reveal">
           <summary>How do I install the desktop apps?</summary>
           <div class="acc-body">
-            <p>Click "Download Apps" and choose your platform (macOS, Windows, or Linux). Download the installer file (.dmg, .exe, or .deb), open it, and follow the standard installation prompts.</p>
+            <p>Click "Download Apps" and choose your platform (macOS, Windows, or Linux). Download the installer file (.dmg, .exe, .deb, or .AppImage), open it, and follow the standard installation prompts.</p>
           </div>
         </details>
 
@@ -701,12 +701,15 @@
             </h3>
             <ol class="steps-list">
               <li data-step="1">
-                <strong>Download DEB</strong>
-                <a href="https://github.com/TechPerson1234/Donut-VPN/raw/refs/heads/main/local-vpn/Donut-Local-VPN.deb" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Download .DEB</a>
+                <strong>Download DEB or AppImage</strong>
+                <div style="display:flex; gap:8px; margin-top:6px; flex-wrap:wrap;">
+                  <a href="https://github.com/TechPerson1234/Donut-VPN/raw/refs/heads/main/local-vpn/Donut-Local-VPN.deb" class="btn btn-primary btn-sm" style="flex:1;" target="_blank" rel="noopener">Download .DEB</a>
+                  <a href="https://github.com/TechPerson1234/Donut-VPN/raw/refs/heads/main/local-vpn/Donut-Local-VPN.AppImage" class="btn btn-ghost btn-sm" style="flex:1;" target="_blank" rel="noopener">Download .AppImage</a>
+                </div>
               </li>
               <li data-step="2">
-                <strong>Install Package</strong>
-                Open with your software center or run <code>sudo dpkg -i</code> in terminal.
+                <strong>Install or Run</strong>
+                For DEB, use your software center. For AppImage, right-click, go to Properties, allow executing as a program, then double-click.
               </li>
             </ol>
           </div>
